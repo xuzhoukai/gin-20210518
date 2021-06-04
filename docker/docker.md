@@ -22,13 +22,15 @@ netsh winsock reset
 docker build -t gotest-image .
 # 查看image
 docker images
-# 镜像创建container
-docker run -itd --name gotest-image /bin/bash
+# 镜像创建container -p宿主机端口:容器端口 
+docker run -p 8080:8080 -d -it --name app01 gotest-image /bin/bash
 
 # 设置镜像加速
 "registry-mirrors": [
     "https://ebmfxi3g.mirror.aliyuncs.com"
   ]
+#停止container 
+docker stop app01
 
 # 
 ```

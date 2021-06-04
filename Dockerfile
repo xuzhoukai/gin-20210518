@@ -11,6 +11,6 @@ COPY . .
 
 RUN go build -o app main.go
 
-EXPOSE 8080 8080
+EXPOSE 8080
 
 ENTRYPOINT ["./app"]
