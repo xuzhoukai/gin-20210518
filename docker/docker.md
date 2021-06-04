@@ -25,6 +25,10 @@ docker images
 # 镜像创建container
 docker run -itd --name gotest-image /bin/bash
 
+# 设置镜像加速
+"registry-mirrors": [
+    "https://ebmfxi3g.mirror.aliyuncs.com"
+  ]
 
 # 
 ```
