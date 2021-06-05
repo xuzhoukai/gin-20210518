@@ -34,5 +34,11 @@ docker exec -it app01 /bin/bash
 #停止container 
 docker stop app01
 
+# docker tag
+docker tag gotest-image zhou2599/docker101tutorial
+
+# push
+docker push zhou2599/gotest-image
+
 # 
 ```
