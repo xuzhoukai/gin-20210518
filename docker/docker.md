@@ -23,7 +23,9 @@ docker build -t gotest-image .
 # 查看image
 docker images
 # 镜像创建container -p宿主机端口:容器端口 
-docker run -p 8080:8080 -d -it --name app01 gotest-image /bin/bash
+docker run -itd -p 8080:8080 --name app01 gotest-image
+# 进入镜像
+docker exec -it app01 /bin/bash
 
 # 设置镜像加速
 "registry-mirrors": [
