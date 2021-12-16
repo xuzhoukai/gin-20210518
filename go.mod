@@ -10,7 +10,6 @@ require (
 	github.com/hpcloud/tail v1.0.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/streadway/amqp v1.0.0
-	github.com/stretchr/objx v0.1.1 // indirect
 	go.mongodb.org/mongo-driver v1.5.2
 	golang.org/x/net v0.0.0-20210427231257-85d9c07bbe3a
 	gopkg.in/fsnotify.v1 v1.4.7 // indirect
